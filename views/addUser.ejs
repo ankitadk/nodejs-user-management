@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="border-b py-3">
+      <div class="flex justify-between max-w-5xl mx-auto items-center">
+        <a href="/" class="text-lg">User Management</a>
+        <a href="/add" class="hover:text-blue-600 text-sm">Add User</a>
+      </div>
+    </div>
+
+    <div class="mt-16 mx-auto w-[380px]">
+      <h1 class="text-2xl font-bold">Add New User</h1>
+      <p class="text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nobis
+        mollitia obcaecati.
+      </p>
+      <form action="/save-user" method="post">
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          class="px-4 py-2 focus:outline-none focus:border-blue-600 border border-neutral-300 w-full mt-5"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          class="px-4 py-2 focus:outline-none focus:border-blue-600 border border-neutral-300 w-full mt-2"
+          required
+        />
+        <input
+          type="text"
+          name="img"
+          placeholder="Profile url"
+          class="px-4 py-2 focus:outline-none focus:border-blue-600 border border-neutral-300 w-full mt-2"
+          required
+        />
+        <button type="submit" class="px-4 py-2 bg-black text-white mt-2">
+          Add User
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
